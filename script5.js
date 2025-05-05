@@ -1,22 +1,22 @@
 const usuarios = [
     {
         nome: "Ana Castanheira",
-        avatar: "/imagens/castanheira-madura.png",
+        avatar: "imagens/castanheira-madura.png",
         arvoresPlantadas: 1540
     },
     {
         nome: "Carlos Verde",
-        avatar: "/imagens/pau-brasil-jovem.png",
+        avatar: "imagens/pau-brasil-jovem.png",
         arvoresPlantadas: 1330
     },
     {
         nome: "Fernanda Pau-Brasil",
-        avatar: "/imagens/peroba-rosa-jovem.png",
+        avatar: "imagens/peroba-rosa-jovem.png",
         arvoresPlantadas: 890
     },
     {
         nome: "Lucas Silva",
-        avatar: "/imagens/peroba-rosa-broto.png",
+        avatar: "imagens/peroba-rosa-broto.png",
         arvoresPlantadas: 350
     }
 ];
