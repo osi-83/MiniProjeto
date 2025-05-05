@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        // Verificação de usuário cadastrado
         const usuarioSalvo = JSON.parse(localStorage.getItem("usuario"));
 
         if (usuarioSalvo) {
