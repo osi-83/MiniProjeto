@@ -1,0 +1,156 @@
+body,html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background: #5a6856;
+    place-items: center;
+    color: #ffffff;
+    margin: 0;
+}
+
+header.title {
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    padding-bottom: 60px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.destaques {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.usuario {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select {
+    margin: 5px;
+    gap: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+.card {
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 180px;
+    font-size: 0.9rem;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+#avatarDIV {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    margin-bottom: 2rem;
+}
+
+#imgAvatar {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+.avatar-info {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: #487248;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+border: 1px solid #ccc;
+}
+
+th, td {
+padding: 8px;
+text-align: left;
+}
+
+thead {
+background-color: #f5f5f5;
+}  
+
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #05090c;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    background-color: #1b3041;
+}
+
+.btn-home {
+    position: absolute;
+}
+
+footer {
+    position: static;
+    bottom: auto;
+    color: #ccc;
+    padding: 10px 0;
+    font-size: 0.75rem;
+}
+

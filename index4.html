@@ -1,0 +1,55 @@
+<!--Precisaremos de uma tela de relatório. Será basicamente uma busca nos registros de reflorestamento (que já fizemos a tela de cadastro). A busca deve ter o campo usuário e tipo de árvore, com um dos campos preenchidos (ou os dois) deve ser exibido em tela o resultado da busca em tela.
+
+Nota técnica: Use uma coleção do objeto usado para o registro de reflorestamento para teste, preencha totalmente com dados ficticios. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relatório de Reflorestamento</title>
+    <link rel="stylesheet" href="style1.css">
+  </head>
+
+  <body>
+    <header class="title">
+        <h1>Sustentare Reflorestamento</h1>
+    </header>
+
+    <main>
+      <div class="container">
+        <form id="formReflorestamento">
+          <label for="nome">Relatórios</label>
+
+          <div class="usuario">
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Usuário:"
+            />
+
+            <select name="especie" id="especie">
+              <option value="">Selecione uma espécie</option>
+              <option value="Ipê">Ipê</option>
+              <option value="Ângico">Ângico</option>
+              <option value="Aroeira">Aroeira</option>
+              <option value="Jequitibá">Jequitibá</option>
+              <option value="Peroba do campo">Peroba do campo</option>
+            </select>
+          </div>
+
+          <button type="submit">Buscar registros</button>
+        </form>
+
+        <div id="resultadoTabela"></div>
+      </div>
+    </main>
+    
+    <footer>
+        &copy; 2025 <i>Osiel Fernandes</i> My website. All rights reserved.   
+    </footer>
+
+    <script src="script4.js"></script>
+  </body>   
+</html>

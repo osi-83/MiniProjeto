@@ -1,0 +1,63 @@
+<!-- Cada usuário poderá acessar uma tela que mostrará seu perfil, com suas informações. Aqui, o usuário só poderá alterar sua BIO e nada a mais.Nesse perfil, também teremos a exibição de sua participação como reflorestador, que é a exibição de quantas árvores que o mesmo plantou (sem distinção de tipo).Um artificio interessante que foi solicitado é que não teremos upload de imagem para foto de avatar; os avatares de todos os usuárioa são fixos e é uma das três arvores que escolheram durante a fase de cadastro de seus perfis.
+Essa imagem muda confome a quantidade de árvores plantadas (100, 300, 700 e 1500+), basicamente, são estágios de crescimento dessa árvore (plantada, broto, jovem e madura).
+Nota técnica: Use um objeto de usuário fake para testar essa tela. -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiniProjeto Navegação</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    
+    <header class="title">
+      <h1>Sustentare Reflorestamento</h1>
+    </header>
+
+    <main>
+      <form class="container" id="perfilUsuario">
+        <h2>Perfil de usuário</h2>
+
+        <input type="text" id="nome" placeholder="Digite seu usuário:" />
+        <input type="password" id="senha" placeholder="Digite sua senha:" />
+
+        <div class="avatar-info" style="display: none">
+          <p>
+            <strong>Árvore escolhida:</strong>
+            <span id="usuarioAvatar"></span>
+          </p>
+
+          <p>
+            <strong>Árvores plantadas:</strong>
+            <span id="qtdArvores"></span>
+          </p>
+
+          <div class="avatar">
+            <img id="imgAvatar" src="" alt="Avatar da Árvore"/>
+          </div>
+
+          <label for="bio">Bio:</label>
+          <textarea
+            id="bio" placeholder="Escreva um pouco sobre você..."
+          ></textarea>
+
+          <div>
+            <button type="button" id="salvarBio">Salvar bio</button>
+          </div>
+        </div>
+
+        <div>
+          <button type="submit" id="entrar">Entrar</button>
+        </div>
+
+      </form>
+    </main>
+
+      <footer>
+        &copy; 2025 <i>Osiel Fernandes</i> My website. All rights reserved.
+      </footer>
+
+    <script src="/script2.js"></script>
+  </body>
+</html>

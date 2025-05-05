@@ -1,0 +1,66 @@
+<!-- Precisamos de uma tela em que o usuário poderá realizar o cadastro de suas ações de reflorestamento.
+Para essa tela, teremos a quantidade de árvores plantadas e qual sua espécie entre as que estão cadastradas no projeto (Ipês, Angicos, Aroeiras, Jequitibás e Peroba do campo).
+Nota técnica: Para o cadastro deixe pronto o objeto do novo registro de reflorestamento em Json, para posteriomente ser enviado para o back-end, como não possuímos uma conexão com o banco podemos deixar o campo de usuário vazio, mas ele precisa existir. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiniProjeto Navegação</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+
+  <body>
+    <header class="title">
+      <h1>Sustentare Reflorestamento</h1>
+    </header>
+
+    <main>
+      <div class="container">
+      
+        <form id="formReflorestamento">
+          <label for="nome">Registro de reflorestamento</label>
+
+          <div class="usuario">
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Usuário:"
+            />
+
+            <input
+              type="number"
+              id="quantidade"
+              name="quantidade"
+              placeholder="Quantidade de árvores:"
+              required
+            />
+
+            <select name="especie" id="especie" required>
+              <option value="">Selecione uma espécie</option>
+              <option value="Ipês">Ipês</option>
+              <option value="Ângicos">Ângicos</option>
+              <option value="Aroeiras">Aroeiras</option>
+              <option value="Jequitibá">Jequitibás</option>
+              <option value="Peroba do campo">Peroba do campo</option>
+            </select>
+
+        </div>
+
+          <button type="submit">Cadastrar</button>
+        
+        </form>
+
+        <pre id="saidaJson"></pre>
+      </div>
+    </main>
+
+    <footer>
+      &copy; 2025 <i>Osiel Fernandes</i> My website. All rights reserved.
+    </footer>
+
+    <script src="script3.js" type="module"></script>
+  </body>
+</html>

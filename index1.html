@@ -1,0 +1,53 @@
+<!-- Ao entrar na aplicação, o usuário deve fazer o cadastro de seus dados, cadastrando usuário e senha, escolhendo uma das três árvores que deverão serão disponibilizadas de avatar de reflorestamento; são elas: o Pau-Brasil, a Castanheira e a Peroba-Rosa. Ao escolher um dessas árvores, o estilo de exibição de todas as páginas devem ficar com a cor principal da árvore: o Pau-Brasil com um tom de vermelho; a Castanheira com um tom de marrom e, a Peroba-Rosa, com um tom de cor de rosa. Nota técnica: Para o cadastro, deixe pronto o objeto de usuário em Json, para, posteriomente, ser enviado para o back-end. É interessante salvar o modo do usuário utilizador no localStorage. -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiniProjeto Navegação</title>
+    <link rel="stylesheet" href="style1.css">
+    </head>
+  
+    <body>
+        <header class="title">
+            <h1>Sustentare reflorestamento</h1>
+        </header>
+        
+        <main>
+            <div class="container">
+                
+              <form id="formReflorestamento">
+              <label for="usuario">Cadastre seu usuário:</label>
+              
+              <div class="usuario">
+                <input type="text" id="nome" name="nome" placeholder="Digite seu usuário:">
+                <input type="password" id="senha" name="senha" placeholder="Senha:">
+              
+              </div>            
+
+              <select name="especie" id="especie" required>
+                <option value="">Selecione um avatar</option>
+                <option value="Pau Brasil">Pau Brasil</option>
+                <option value="Castanheira">Castanheira</option>
+                <option value="Peroba Rosa">Peroba Rosa</option>
+              </select>
+
+              <div class="imagens" style="display: none" >
+                <img src="" alt="Pau Brasil">
+                <img src="" alt="Castanheira">
+                <img src="" alt="Peroba Rosa">
+              </div>
+              
+                <button type="submit">Cadastrar</button>
+              
+              </form>
+        </main>
+        
+        <footer>
+            &copy; 2025 <i>Osiel Fernandes</i> My website. All rights reserved.   
+        </footer>
+
+        <script src="/script1.js" type="module"></script>
+    
+    </body>   
+</html>
