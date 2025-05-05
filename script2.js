@@ -30,7 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
       const img = document.getElementById("imgAvatar");
       
       img.style.width = "100%";
-      img.style.height = "auto";
+      img.style.height = "100%";
+      img.style.position = "relative";
+      img.style.left = "50%";
       img.src = obterImagem(usuarioSalvo.avatar, usuarioSalvo.qtdArvores || 0);
       img.alt = `Avatar da árvore ${usuarioSalvo.avatar}`;
 
@@ -61,10 +63,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const nomes = {
       "Pau Brasil": "pau-brasil",
-      Castanheira: "castanheira",
+      "Castanheira": "castanheira",
       "Peroba Rosa": "peroba-rosa",
     };
 
     return `imagens/${nomes[arvore]}-${estagio}.png`;
   }
+
 });
